@@ -7,7 +7,7 @@ Worked with Maruthi to create this simple tic-tac-toe game. <br>
 Tech used: HTML, CSS, JavaScript.
 
 ## Optimizations:
-Things that we would have done had we more time:
+Things that we are working on:
 - improve styling
 - add animations
 
