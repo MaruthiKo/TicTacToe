@@ -1,8 +1,5 @@
 //call the function to run the game
 tictactoe();
-
-
-//tictactoe game
 function tictactoe(){
   let turn = 'X';
   let playing = true;

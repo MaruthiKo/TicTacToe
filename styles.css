@@ -1,28 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .wrapper{
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-    background-color: #000000;
-    font-size: 2rem;
-  }
-  .container{
-    display:flex
-  }
-  
-  .cell{
-    margin: 5px;
-    width: 90px;
-    height: 90px;
-    background-color: #ffffff;
-    line-height: 90px;
-    text-align: center;
-  }
-  
-  button{
-    display: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(#1FA2FF,#12D8FA,#A6FFCB);
+  font-family: 'Poor Story', cursive;
+  font-weight: bold;
+}
+.wrapper{
+  width: auto;
+  height: 100vh;
+  padding: 5px;
+  font-size: 2rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+}
+
+.cell{
+  margin: 5px;
+  width: 90px;
+  height: 90px;
+  background-color: #000033;
+  line-height: 90px;
+  text-align: center;
+  color: #FF2000;
+  border-radius: 5px;
+  font-size: 4.2rem;
+}
+
+
+.cell:hover,button:hover{
+  color:#000033;
+  background-color:#FF2000;
+  cursor: pointer;
+}
+.info{
+  color: #FF2000;
+  text-align: center;
+}
+
+button{
+  display: none;
+  margin: 0 auto;
+  color: #FF2000;
+  background-color: #000033;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+
+/*Animation*/
+
+h1 {
+  border-right: solid 3px #FF2000;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 3rem;
+  color: #000033;
+}
+
+/* Animation */
+h1 {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 250px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: #FF2000;}
+  to{border-right-color: transparent;}
+}
